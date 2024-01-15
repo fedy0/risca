@@ -1,0 +1,90 @@
+menu.clksrc=CPU Clock Frequency
+menu.burn_tool_firmware=Burn Tool Firmware
+menu.burn_baudrate=Burn Baud Rate
+menu.toolsloc=Tool Install Location
+
+##################################################
+############# neorv32 ###############
+
+neorv32.name=neorv32
+
+## Toolchain
+neorv32.menu.toolsloc.default=Default
+neorv32.menu.toolsloc.default.compiler.path={runtime.tools.riscv64-unknown-elf-gcc.path}/bin/
+
+## CPU Clock
+neorv32.menu.clksrc.400=16MHz CPU Clock Frequency
+neorv32.menu.clksrc.500=100MHz CPU Clock Frequency
+neorv32.menu.clksrc.400.build.f_cpu=16000000L
+neorv32.menu.clksrc.500.build.f_cpu=100000000L
+
+## Burn baud rate
+neorv32.menu.burn_baudrate.2000000=2 Mbps
+neorv32.menu.burn_baudrate.4500000=4.5 Mbps (Must open-ec!)
+neorv32.menu.burn_baudrate.1500000=1.5 Mbps
+neorv32.menu.burn_baudrate.1000000=1 Mbps
+neorv32.menu.burn_baudrate.2000000.build.burn_baudrate=2000000
+neorv32.menu.burn_baudrate.4500000.build.burn_baudrate=4500000
+neorv32.menu.burn_baudrate.1500000.build.burn_baudrate=1500000
+neorv32.menu.burn_baudrate.1000000.build.burn_baudrate=1000000
+
+## Burn tool firmware
+neorv32.menu.burn_tool_firmware.amigo=fujprog
+
+## Core settings
+neorv32.build.variant=neo
+neorv32.build.core=arduino
+
+## This sets a define for use in the compiled code.
+neorv32.build.board=NEORV32
+
+## This selects the tool from "programmers.txt"
+neorv32.program.tool=fujprog
+neorv32.upload.tool=fujprog
+
+## Limit is the 4MB Flash. Assume half is used for something else.
+neorv32.upload.maximum_size=8388608
+neorv32.build.ldscript="{runtime.platform.path}/cores/arduino/neorv32/lds/neorv32.ld"
+
+##################################################
+############# picorv32 ###############
+
+picorv32.name=picorv32
+
+## Toolchain
+picorv32.menu.toolsloc.default=Default
+picorv32.menu.toolsloc.default.compiler.path={runtime.tools.riscv64-unknown-elf-gcc.path}/bin/
+
+## CPU Clock
+picorv32.menu.clksrc.400=16MHz CPU Clock Frequency
+picorv32.menu.clksrc.500=100MHz CPU Clock Frequency
+picorv32.menu.clksrc.400.build.f_cpu=16000000L
+picorv32.menu.clksrc.500.build.f_cpu=100000000L
+
+## Burn baud rate
+picorv32.menu.burn_baudrate.2000000=2 Mbps
+picorv32.menu.burn_baudrate.4500000=4.5 Mbps (Must open-ec!)
+picorv32.menu.burn_baudrate.1500000=1.5 Mbps
+picorv32.menu.burn_baudrate.1000000=1 Mbps
+picorv32.menu.burn_baudrate.2000000.build.burn_baudrate=2000000
+picorv32.menu.burn_baudrate.4500000.build.burn_baudrate=4500000
+picorv32.menu.burn_baudrate.1500000.build.burn_baudrate=1500000
+picorv32.menu.burn_baudrate.1000000.build.burn_baudrate=1000000
+
+## Burn tool firmware
+picorv32.menu.burn_tool_firmware.amigo=fujprog
+
+## Core settings
+picorv32.build.variant=neo
+picorv32.build.core=arduino
+
+## This sets a define for use in the compiled code.
+picorv32.build.board=picorv32
+
+## This selects the tool from "programmers.txt"
+picorv32.program.tool=fujprog
+picorv32.upload.tool=fujprog
+
+## Limit is the 16MB Flash. Assume half is used for something else.
+picorv32.upload.maximum_size=8388608
+picorv32.build.ldscript="{runtime.platform.path}/cores/arduino/picorv32/lds/picorv32.ld"

@@ -1,0 +1,16 @@
+{
+    "name": "framework-risca",
+    "description": "Arduino Platform for Embedded RISC-V Chips",
+    "version": "0.0.1",
+    "keywords": [
+    "framework",
+    "arduino",
+    "risc-v",
+    "risca"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fedy0/risca"
+  }
+}

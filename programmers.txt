@@ -1,0 +1,5 @@
+fujprog.name=fujprog
+fujprog.communication=usb
+fujprog.program.params.verbose=-v
+fujprog.program.params.quiet=-q
+fujprog.program.tool=fujprog
